@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 17
-VisualStudioVersion = 17.8.34309.116
+# Visual Studio Version 18
+VisualStudioVersion = 18.5.11709.299 stable
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CompanyEmployees", "CompanyEmployees\CompanyEmployees.csproj", "{F30538CB-FC0A-4042-BAFC-AB76C0AFA3FE}"
 EndProject
@@ -14,6 +14,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CompanyEmployees.Core.Services.Abstractions", "CompanyEmployees.Core.Services.Abstractions\CompanyEmployees.Core.Services.Abstractions.csproj", "{836999D9-E1DF-43F4-8CA2-60561A303065}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CompanyEmployees.Infrastructure.Persistence", "CompanyEmployees.Infrastructure.Persistence\CompanyEmployees.Infrastructure.Persistence.csproj", "{0D5CF07A-7331-47E2-AB34-352D081AFC26}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CompanyEmployees.Infrastructure.Presentation", "CompanyEmployees.Infrastructure.Presentation\CompanyEmployees.Infrastructure.Presentation.csproj", "{2C24604E-9AD9-49D1-B21C-2012EE1E2A08}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{0D5CF07A-7331-47E2-AB34-352D081AFC26}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0D5CF07A-7331-47E2-AB34-352D081AFC26}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0D5CF07A-7331-47E2-AB34-352D081AFC26}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2C24604E-9AD9-49D1-B21C-2012EE1E2A08}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2C24604E-9AD9-49D1-B21C-2012EE1E2A08}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2C24604E-9AD9-49D1-B21C-2012EE1E2A08}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2C24604E-9AD9-49D1-B21C-2012EE1E2A08}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
