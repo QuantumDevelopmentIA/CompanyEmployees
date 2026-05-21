@@ -12,8 +12,10 @@ namespace CompanyEmployees.Infrastructure.Presentation.Controllers
     [ApiController]
     public class CompaniesController : ControllerBase
     {
-        private readonly IServiceManager _service;
-        public CompaniesController(IServiceManager service) => _service = service;
+        private readonly IServiceManager _service; //Campo
+        public CompaniesController(IServiceManager service) => _service = service; //Constructor 
+
+
         [HttpGet]
         public IActionResult GetCompanies()
         {

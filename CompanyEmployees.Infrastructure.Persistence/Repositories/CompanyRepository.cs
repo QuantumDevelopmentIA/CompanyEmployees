@@ -1,5 +1,6 @@
 ﻿using CompanyEmployees.Core.Domain.Repositories;
 using CompanyEmployees.Core.Domain.Entities;
+using Shared.DataTransferObjects;
 
 namespace CompanyEmployees.Infrastructure.Persistence.Repositories;
 
