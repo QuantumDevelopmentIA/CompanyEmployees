@@ -1,6 +1,7 @@
 using CompanyEmployees.Extensions;
 using Microsoft.AspNetCore.HttpOverrides;
 using Serilog;
+using AutoMapper;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -10,7 +11,13 @@ builder.Services.ConfigureLoggerService();
 builder.Services.ConfigureRepositoryManager();
 builder.Services.ConfigureServiceManager();
 builder.Services.ConfigureSqlContext(builder.Configuration);
-builder.Services.AddAutoMapper(typeof(Program));
+
+// Register AutoMapper with AutoMapper 16.x
+var mapperConfig = new MapperConfiguration(mc =>
+{
+    mc.AddMaps(typeof(Program).Assembly);
+});
+builder.Services.AddSingleton(mapperConfig.CreateMapper());
 
 
 // Add services to the container.
